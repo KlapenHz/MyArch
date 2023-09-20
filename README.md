@@ -1,0 +1,2 @@
+# MyArch
+Arch installation script
