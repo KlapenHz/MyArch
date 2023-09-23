@@ -1,11 +1,45 @@
-# MyArch
-Arch installation script
+# EK-Arch-Vanilla
+Simple script to install vanilla version of Arch Linux. I wrote it for my own needs,  
+but maybe it will be useful to someone else. What is important is that there are  
+no additional things here, it is a good starting point for configuring or testing  
+your own version of Arch for example with the windows manager of your choice.
 
-For now it's only a draft for my needs. I would like to shorten the process of  
-installing a testing system. In the future, I will expand the script with  
-additional options, because why not :P
+## Important:
+- Before using it, you must have root and boot partitions created,
+- Use at your own risk ;)
 
-More detailed description/readme in the future...
+## What is included
+After installation you will have:
+- grub, 
+- efibootmgr, 
+- vim, 
+- networkmanager, 
+- os-prober, 
+- man, 
+- sudo
 
+And root filesystem on ext4.
+During installation you will have option to install additional packages  
+lvm2 and ntfs-3g, but for now it's all.
+
+## Instructions
+1. Prepare bootable USB drive with Arch Linux
+2. Boot your computer from USB drive
+3. Install git and glibc (if it's needed)
+```bash
 pacman -Sy
-Install git and glibc
+```
+```bash
+pacman -S git glibc
+```
+4. Clone my repository:
+```bash
+git clone https://github.com/KlapenHz/MyArch.git
+```
+5. Run `ek-arch-base-install.sh` script
+```bash
+cd MyArch
+chmod +x ek-arch-*-install.sh
+./ek-arch-base-install.sh
+```
+6. Follow the instructions, **pay attention to the choice of filesystem for installation.**
