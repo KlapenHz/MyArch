@@ -44,5 +44,5 @@ chmod +x ek-arch-*-install.sh
 ./ek-arch-base-install.sh
 ```
 7. Follow the instructions, **pay attention to the choice of filesystem for installation.**
-8. After installation you should update grub entries (if it's not starting)
+8. After installation reboot your computer, if it's not starting, then you should update grub entries.
 [wiki.archlinux.org - GRUB configuration](https://wiki.archlinux.org/title/GRUB#Configuration)
