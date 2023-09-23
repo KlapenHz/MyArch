@@ -70,4 +70,4 @@ sed -i '/^# %wheel ALL=(ALL:ALL) ALL/s/^# //g' /etc/sudoers
 
 echo -e "\n------------------------------------------------"
 echo "Deleting myself..."
-# rm ek-arch-post-install.sh
+rm ek-arch-post-install.sh

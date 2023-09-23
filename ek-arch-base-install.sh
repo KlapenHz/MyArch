@@ -39,8 +39,8 @@ echo "Installing esential packages"
 while true; do
     read -p "Do you want to install additional packages like lvm2 and ntfs-3g [y/n]? " yn
     case $yn in
-        [Yy]* ) pacstrap /mnt base linux linux-firmware grub efibootmgr vim networkmanager lvm2 ntfs-3g os-prober man; break;;
-        [Nn]* ) pacstrap /mnt base linux linux-firmware grub efibootmgr vim networkmanager os-prober man; break;;
+        [Yy]* ) pacstrap /mnt base linux linux-firmware grub efibootmgr vim networkmanager lvm2 ntfs-3g os-prober man sudo; break;;
+        [Nn]* ) pacstrap /mnt base linux linux-firmware grub efibootmgr vim networkmanager os-prober man sudo; break;;
         * ) echo "Please answer yes [y] or no [n].";;
     esac
 done
